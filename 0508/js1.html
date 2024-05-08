@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <input type="button" onclick="action()">
+    <script>
+        document.write("こんにちは"); //「こんにちは」を出力してます。
+        document.write("<br>");
+        // メソッド
+        // document.write("こんばんは");
+        // プロパティ
+        // document.bgColor="blue";
+        // アラート
+        // alert("警告です。");
+        //コンソール
+        console.log("こんにちは");
+        document.write("<br>");
+        // 変数
+        var a = 123;
+        document.write(a);
+        console.log(a);
+        document.write("<br>");
+        // データ型
+        var b = typeof a;
+        document.write(b);
+        document.write("<br>");
+        // 配列
+        var c = ["おはよう","こんにちは","こんばんは"];
+        document.write(c[0]);
+        document.write(c[1]);
+        
+        document.write("<br>");
+        var cNum = c.length;
+        document.write(cNum);
+        document.write("<br>");
+
+        var name = "zhu jiawen";
+        var str = c[1] + name +　"さん";
+        document.write(str);
+        document.write("<br>");
+
+        var a = 1;
+        if(a > 2){
+            document.write("aは2より大きい");
+        }else{
+            document.write("aは2より小さい");
+        }
+        document.write("<br>");
+
+        var a = "0";
+        if (a < 0) {
+        window.document.write("aの値は負です");
+        } else if (a === 0) {
+        window.document.write("aの値はゼロです");
+        } else if (a > 0) {
+        window.document.write("aの値は正です");
+        } else {
+        window.document.write("aは数値ではありません");
+        }
+        document.write("<br>");
+        
+        if((5 > 2) && ( 3 < 7 )) {
+            document.write("TRUE");
+        }else{
+            document.write("FALSE");
+        }
+        document.write("<br>");
+
+        for(i = 0; i < 3; i ++){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        for(i = 0; i <= 6; i++){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        for(i = 3; i <= 6; i++){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        // a[11,22,33],for文を使ってすべて取り出してください
+        var a =[11,22,33,44];
+        for(i=0;i<a.length;i++){
+            document.write(a[i]);
+        }
+        document.write("<br>");
+
+        for(i = 3;i>=0;i--){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        var f1 =Math.floor(10.4);
+        var f2 =Math.floor(10.5);
+        console.log("floor1:"+f1);
+        console.log("floor2:"+f2);
+        document.write("<br>");
+
+        function action(){
+            document.write("クリックされました")
+            document.bgColor="red";
+        }
+
+        action();
+
+        document.bgColor="white";
+        function rect(width, height){
+            var ans = width * height;
+        console.log(ans);
+        }
+        rect(10,15);
+        rect(25,15);
+
+        
+    </script>
+</body>
+</html>
